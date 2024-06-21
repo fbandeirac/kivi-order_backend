@@ -34,3 +34,12 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Config ###
+src/main/resources/application.yaml
+
+### Logs ###
+
+### Database ###
+kivi_order_dev.db
+kivi_order.db

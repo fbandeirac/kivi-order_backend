@@ -1,0 +1,33 @@
+ktor:
+  application:
+    modules:
+      - com.kivikood.ApplicationKt.module
+  deployment:
+    port: 8080
+jwt:
+  domain: ""
+  audience_web: ""
+  audience_mobile: ""
+  realm: ""
+  secret: ""
+
+test:
+  database:
+    url: "jdbc:h2:mem:test"
+    driver: "org.h2.Driver"
+    user: "sa"
+    password: ""
+
+development:
+  database:
+    url: "jdbc:sqlite:kivi_order_dev.db"
+    driver: "org.sqlite.JDBC"
+    user: "sa"
+    password: ""
+
+production:
+  database:
+    url: "jdbc:sqlite:kivi_order.db"
+    driver: "org.sqlite.JDBC"
+    user: ""
+    password: ""

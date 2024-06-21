@@ -1,10 +1,13 @@
 # Kivi Order - Backend
 
 ### Description:
+
 Description:
-Kivi Order is a simple application designed for small businesses like home bakers, small bakeries, and cafes to manage their orders and customers. This is the backend part of the application, built using Kotlin and the Ktor framework.
+Kivi Order is a simple application designed for small businesses like home bakers, small bakeries, and cafes to manage
+their orders and customers. This is the backend part of the application, built using Kotlin and the Ktor framework.
 
 ### Project Structure:
+
 ```
 └── main
 └── kotlin
@@ -26,6 +29,7 @@ Kivi Order is a simple application designed for small businesses like home baker
 ```
 
 ### Installation:
+
 Clone the repository:
 
 `git clone https://github.com/yourusername/kivi-order-backend.git`
@@ -43,6 +47,7 @@ Run the Application:
 `./gradlew run`
 
 ### Usage:
+
 Endpoints:
 
 POST /users/register - Register a new user.
@@ -57,6 +62,7 @@ Configuration:
 Modify application.conf to configure database connections and other settings.
 
 ### Contributing:
+
 Fork the repository.
 Create your feature branch (git checkout -b feature/fooBar).
 Commit your changes (git commit -am 'Add some fooBar').
@@ -64,4 +70,5 @@ Push to the branch (git push origin feature/fooBar).
 Create a new Pull Request.
 
 ### License:
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
