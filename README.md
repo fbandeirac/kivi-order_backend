@@ -2,41 +2,22 @@
 
 ### Description:
 
-Description:
-Kivi Order is a simple application designed for small businesses like home bakers, small bakeries, and cafes to manage
+Kivi Order is a simple application designed for small businesses like home bakers, small bakeries and cafes to manage
 their orders and customers. This is the backend part of the application, built using Kotlin and the Ktor framework.
 
-### Project Structure:
+### License:
 
-```
-└── main
-└── kotlin
-├── com
-│   └── example
-│       ├── Application.kt
-│       ├── config
-│       │   └── DatabaseConfig.kt
-│       ├── models
-│       │   └── User.kt
-│       ├── repositories
-│       │   └── UserRepository.kt
-│       ├── services
-│       │   └── UserService.kt
-│       └── routes
-│           └── UserRoutes.kt
-└── resources
-└── application.conf
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ### Installation:
 
 Clone the repository:
 
-`git clone https://github.com/yourusername/kivi-order-backend.git`
+`git clone https://github.com/fbandeirac/kivi-order_backend.git`
 
 Change to the Project Directory:
 
-`cd kivi-order-backend`
+`cd kivi-order_backend`
 
 Build the Project:
 
@@ -50,25 +31,41 @@ Run the Application:
 
 Endpoints:
 
-POST /users/register - Register a new user.
-POST /users/login - Login a user.
-POST /orders - Create a new order.
-PUT /orders/{id} - Update an existing order.
-DELETE /orders/{id} - Delete an order.
-GET /orders/{id} - Get order details by ID.
-GET /orders - List all orders.
+POST /user - Register a new user.
+GET /user/{id} - Get user by ID.
+PUT /user/{id} - Update an existing user.
+DELETE /user/{id} - Delete an user.
+GET /json/users - List all users.
+
 Configuration:
 
-Modify application.conf to configure database connections and other settings.
+Modify application.yaml to configure database connections and other settings.
 
 ### Contributing:
 
-Fork the repository.
+Clone the repository.
 Create your feature branch (git checkout -b feature/fooBar).
 Commit your changes (git commit -am 'Add some fooBar').
 Push to the branch (git push origin feature/fooBar).
 Create a new Pull Request.
 
-### License:
+### Project Structure:
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
+src
+├── main
+│   ├── kotlin
+│   │   └── com.kivikood
+│   │       ├── factories
+│   │       ├── plugins
+│   │       ├── routes
+│   │       ├── Application.kt
+│   └── resources
+│       └── application.example.yaml
+├── test
+└── LICENSE
+└── README.md
+└── build.gradle.kts
+└── .gitignore
+```
+
